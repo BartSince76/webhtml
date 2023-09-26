@@ -1,0 +1,10 @@
+SELECT DLookUp("NRSAP","KEOST","KEOST.NRINW = '" & [KEOST_ProtZwrot].[NRINW] & "'") AS NRSAP, KEOST_ProtZwrot.NRINW, KEOST_ProtZwrotPoz.SN, KEOST_ProtZwrot.DATA, KEOST_ProtZwrot.JEDORG, KEOST_ProtZwrot.KOMORG, KEOST_ProtZwrot.LOKALIZACJA, KEOST_ProtZwrotPoz.POZ, KEOST_ProtZwrot.Przekazujący, KEOST_ProtZwrot.Uzytkownik, KEOST_ProtZwrot.Odpowiedzialny, KEOST_ProtZwrot.IdUzytkownikZew, KEOST_ProtZwrotPoz.ILE, KEOST_ProtZwrotPoz.UWAGI, "PGE GiEK S.A. Oddział KWB Bełchatów" AS [Nazwa firmy], DLookUp("IDKomputeryDic","Komputery","[komputery].[SN] = '" & [SN] & "'") AS KompDicID, "TCK" AS KomOrg, KEOST_ProtZwrot.OPIS, KEOST_ProtZwrot.NRDOK, KEOST_ProtZwrot.ROK
+FROM KEOST_ProtZwrot INNER JOIN KEOST_ProtZwrotPoz ON (KEOST_ProtZwrot.NRINW = KEOST_ProtZwrotPoz.NRINW) AND (KEOST_ProtZwrot.NRDOK = KEOST_ProtZwrotPoz.NRDOK)
+ORDER BY KEOST_ProtZwrot.NRDOK, KEOST_ProtZwrot.NRINW, KEOST_ProtZwrot.DATA, KEOST_ProtZwrotPoz.POZ;
+
+
+20220919_INST15742A_ZAL01 (G-73_2)
+
+
+NRINW
+[NRINW] IN (4874102751, 4874102801, 4874102871, 4874102761)

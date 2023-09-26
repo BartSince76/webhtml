@@ -1,0 +1,18 @@
+Zbigniew Humienny, Krzysztof Kiszka - Metrologia i zamienność - Warszawa 2011
+
+https://giek.gkpge.pl/sites/tck/bdz/_layouts/listform.aspx?PageType=6&ListId={1DFC4FD9-C052-42BB-A3A1-9EFFBF4FD0F1}&ID=6
+https://giek.gkpge.pl/sites/tck/bdz/_layouts/listform.aspx?PageType=6&ListId={1DFC4FD9-C052-42BB-A3A1-9EFFBF4FD0F1}
+https://giek.gkpge.pl/sites/tck/bdz/_layouts/listform.aspx?PageType=9&ListId={1DFC4FD9-C052-42BB-A3A1-9EFFBF4FD0F1}
+https://giek.gkpge.pl/sites/tck/bdz/_layouts/DialogPage.aspx
+
+_layouts/listform.aspx?PageType=6&ListId=
+_layouts/DialogPage.aspx
+
+   <a class="ms-addnew" id="idHomePageNewItem" onclick="javascript:NewItem2(event, &quot;http://**Insert URL to List i.e. /sites/subsite/List**/_layouts/listform.aspx?PageType=8&amp;ListId={**Insert the List ID**}&amp;RootFolder=**Insert Root Folder for that List and Content Type**&amp;ContentTypeID=**Insert Content Type ID**&quot;);javascript:return false;" href="**Insert URL to List i.e. /sites/subsite/List**/_layouts/listform.aspx?PageType=8&amp;ListId={**Insert the List ID**}&amp;RootFolder=" target="_self">Insert Name of HyperLink</a>
+   
+   
+   /sites/tck/bdz/_layouts/listform.aspx?PageType=8&ListId={E3DEDD0B-75E7-460E-A7A1-0B39B340DCDB}&ContentTypeId=0x0100CD636EC8AC170849B7FF9321F3400CE701
+   
+   /sites/tck/bdz/_layouts/listform.aspx?PageType=8&ListId={1DFC4FD9-C052-42BB-A3A1-9EFFBF4FD0F1}&ContentTypeId=0x0100CD636EC8AC170849B7FF9321F3400CE702
+   
+   BE3DEDD0B-75E7-460E-A7A1-0B39B340DCDB

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html> 
+<head>
+		<meta charset=utf-8">
+		<title> Mnemotechnika </title>
+<head>
+
+<body>		
+			<header>
+				Serwis zapalonych myślicieli
+			
+				<nav>
+					<ul>
+						<li>Wykaz 1</li>
+						<li>Wykaz 2</li>
+						<li>Wykaz 3</li>
+					</ul>
+				</nav>
+			</header>
+			
+			<main>
+				<h1> Nagłówek 1 </h1>
+				<h2> Nagłówek 2 </h2>
+				<section id="Sekcja pierwsza">
+					<h1 style="color:blue;"> Wytworny pokaz slajdów ... </h1>
+						<p style="color:red;">Wszystko co przejawia się w myśli można przedstawić w formie akapitu.</p>
+						<p style="color:green;">Myśli me złote i nieuczesane jak pięknie będą tutaj zapisane</p>
+						<p style="color:gold;">A obraz wart więcej niż tysiąc słów wypowiedzianych</P>
+	
+				</section>
+		<article> 
+			<H1>Mój pierwszy wpis Blog</H1>
+			<p>Stało się jasne jak słońce, że w następstwie opublikowania pierwszej zajawiki strony w html, chęć dalszego rozwoju przekształci się w pisanie bloga</p>
+			
+		</article>
+				<section id="Sekcja sterujaca" style="background-color:yellow;">
+					<p> smęt powierzchowności</p>
+					<button id="next" onclick="showNext()"> Show next image</button>
+						<div class="image" style="display: none;"><img src="img\img1.jpg"></div>
+						<div class="image" style="display: none;"><img src="img\img2.jpg"></div>	
+						<div class="image" style="display: none;"><img src="img\img3.jpg"></div>
+						<div class="image" style="display: none;"><img src="img\img4.jpg"></div>
+				</section>
+			</main>
+			
+<Footer> Wszystkie prawa zastrzeżone &copy;2023 Kowal  </Footer>			
+			
+
+
+
+
+	
+
+<script type="text/javascript">
+	
+		var divs = document.querySelectorAll('div.image');
+		
+		var button = document.getElementById('next'); //button
+		var currentImage = 0;
+		
+		function showNext() {
+		 button.style.display  = 'inline';
+		 divs[currentImage].style.display = 'block';
+		 setTimeout(hide, 5000);
+		 }
+		
+		function hide() {
+		button.style.display = 'block';
+		divs[currentImage].style.display = 'none';
+		currentImage = (currentImage + 1) % divs.length;
+		}
+
+</script>
+
+Przejdź do: <a href="#Sekcja pierwsza">Moja sekcja - pierwsza</a>
+</body>
+
+
+
+</html>
