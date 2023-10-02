@@ -1,2 +1,13 @@
 /* CSS (Cascading Style Sheets) */
-p {background-color:lightblue;}
+H1 {background-color:pink}
+body
+ {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 20px auto 0 auto;
+    padding: 20px 30px;
+    border: 6px solid #eaeaea;
+    color: #646363;
+    font-family: Poppins, sans-serif;
+    line-height: 1.5;
+}
