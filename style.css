@@ -1,8 +1,13 @@
 /* CSS (Cascading Style Sheets) */
-H1 {background-color:pink}
+
+*{
+	box-sizing: border-box;
+	
+}
+
 body
  {
-    box-sizing: border-box;
+    box-sizing: border-box; /* (standardowy model polowy->content-box) | (alternatywny model polowy->border-box) */
     max-width: 1200px;
     margin: 20px auto 0 auto;
     padding: 20px 30px;
@@ -10,4 +15,77 @@ body
     color: #646363;
     font-family: Poppins, sans-serif;
     line-height: 1.5;
+}
+
+h1 
+{
+	background-color:olive;
+	font-family: Tangerine;
+}
+h2
+{
+	font-family:Noto Serif Makasara, Droid Sans;
+}
+
+p 
+{
+	font-family: Noto Serif Makasar, Grandiflora One;
+}
+
+main 
+{ 
+background-color: antiquewhite;
+width: 70%;
+/* height: 200px;*/
+
+}
+
+#site-content 
+{
+	display: flex;
+}
+
+#sidebar 
+{
+/* background-color: lightpink; */
+width: 30%;
+text-align: left;
+border-left: 1px solid #dddddd;
+margin-left: 40px
+/* kod:-> height: 200px; */	
+}
+
+#main-header nav ul 
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#main-header nav ul li
+{
+	display: inline-block;
+	margin: 0 15px;
+}
+
+#main-header nav li div
+{
+	min-width: 190px;
+	text-align: left;
+	border: 1px solid #dddddd;
+	background-color: #ffffff;
+	padding: 15px 0;
+	font-size: 90%;
+}
+
+#main-header nav li div a 
+{
+	display: block;
+	margin: 0 15px 12px 20px;
+	
+}
+
+#main-header nav li div a:last-child
+{
+	margin-bottom: 0;
 }
