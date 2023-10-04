@@ -42,6 +42,35 @@ p
 	margin-top: 5px;
 	font-family: Noto Serif Makasar, Grandiflora One;
 }
+
+.a 
+{
+	background-color: coral ;
+}
+
+.b 
+{
+	background-color: lightpink;
+}
+
+.c 
+{
+	background-color: lightgreen;
+	width: 300px;
+	position: relative;
+	z-index: 1;
+	top: -20px;
+	left: 0px;
+}
+.d {
+  position: sticky;
+  background-color: lightblue;
+  z-index: 3;
+  top: 45px;
+  left: 60px;
+}
+
+
 a {
 	color: #646363;
 	text-decoration: none;
@@ -133,6 +162,7 @@ margin-left: 40px
 {
 	display: inline-block;
 	margin: 0 15px;
+	position: relative;
 }
 
 #main-header nav li div
@@ -143,12 +173,21 @@ margin-left: 40px
 	background-color: #ffffff;
 	padding: 15px 0;
 	font-size: 90%;
+	position: absolute;
+	display: none;
+	white-space: nowrap;
+}
+
+#main-header nav li:hover div {
+  display: block;
 }
 
 #main-header nav li div a 
 {
 	display: block;
 	margin: 0 15px 12px 20px;
+	margin: 0 15px 12px 20px;
+	color: red;
 	
 }
 
