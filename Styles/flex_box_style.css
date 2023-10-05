@@ -11,3 +11,10 @@ h1
 	font-size: 40px;
 	color: red;
 }
+
+main h2 
+{
+	font-family:'Times New Roman', Times, serif;
+	font-size: 12pt;
+	color: olivedrab;
+}
