@@ -13,7 +13,7 @@ body
     padding: 20px 30px;
     border: 6px solid #eaeaea;
     color: #646363;
-    font-family: Poppins, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
 }
 
@@ -23,13 +23,14 @@ h1
 	margin-bottom: 0;
 	margin-top: 30px;
 	background-color:rgb(243, 191, 157);
-	font-family: Tangerine;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-stretch: extra-expanded;
 }
 h2
 {
 	margin-bottom: 0;
 	margin-top: 30px;
-	font-family:Noto Serif Makasara, Droid Sans;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h3 
@@ -194,7 +195,7 @@ margin-left: 40px
 	display: block;
 	margin: 0 15px 12px 20px;
 	margin: 0 15px 12px 20px;
-	color: red;
+	color: rgb(157, 206, 23);
 	
 }
 
