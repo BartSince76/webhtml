@@ -21,8 +21,10 @@ h1
 {
 	
 	margin-bottom: 0;
-	margin-top: 30px;
-	background-color:rgb(243, 191, 157);
+	margin-top: 26px;
+	background-color: white;
+	color: #646263;
+	font-variant-caps: petite-caps;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-stretch: extra-expanded;
 }
@@ -30,6 +32,7 @@ h2
 {
 	margin-bottom: 0;
 	margin-top: 30px;
+	font-variant-caps: petite-caps;
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -131,7 +134,7 @@ main > article h2:first-of-type
 
 #site-content 
 {
-	display: flex;
+	display: flex; /* */
 }
 
 #sidebar 
@@ -143,6 +146,25 @@ border-left: 1px solid #dddddd;
 margin-left: 40px
 /* kod:-> height: 200px; */	
 }
+/* Start 2023-10-06 dostosowywanei Budowa-podstron */
+#sidebar section 
+{
+	margin-top:45px; 
+	padding-left: 25px;
+	
+}
+
+#sidebar section:first-of-type { margin-top: 0;}
+#sidebar  h2 { margin-top: 0; margin-bottom: 14px; font-size: 1.2em}
+#sidebar ul { list-style-type: none; margin:0; padding:0; font-size: 95%;}
+#sidebar li { margin-bottom: 7px; }
+#sidebar a { color: #786d6d; }
+
+.centered-img {display: block; margin: 30px auto;}
+
+.float-right { float: right; margin: 10px 0 10px 10px;}
+
+/* Stop 2023-10-06 dostosowywanei Budowa-podstron */
 
 #main-header
 {
@@ -195,7 +217,7 @@ margin-left: 40px
 	display: block;
 	margin: 0 15px 12px 20px;
 	margin: 0 15px 12px 20px;
-	color: rgb(157, 206, 23);
+	color: red;
 	
 }
 
@@ -203,3 +225,4 @@ margin-left: 40px
 {
 	margin-bottom: 0;
 }
+

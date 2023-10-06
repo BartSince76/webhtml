@@ -12,9 +12,38 @@ h1
 	color: red;
 }
 
-main h2 
+
+main  
 {
 	font-family:'Times New Roman', Times, serif;
 	font-size: 12pt;
-	color: olivedrab;
+	color: green;
+}
+
+main h2
+{
+	font-family: Tahoma;
+	font-size: 40px;
+	color: gray;
+}
+
+#kontener
+{
+	/* width: 1850px */
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	flex-direction: column-reverse;
+	flex-direction: row-reverse;
+	flex-direction: row;
+	}
+
+.item {
+  width: 120px;
+  height: 30px;
+  background-color: lightpink;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  color: white;
 }
