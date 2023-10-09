@@ -8,7 +8,7 @@
 body
  {
     box-sizing: border-box; /* (standardowy model polowy->content-box) | (alternatywny model polowy->border-box) */
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 20px auto 0 auto;
     padding: 20px 30px;
     border: 6px solid #eaeaea;
@@ -89,9 +89,10 @@ a {
 	color: navy;
   }
 main 
-{ 
+{
+margin-left: 10px;	
 background-color: antiquewhite;
-width: 70%;
+width: 85%;
 /* height: 200px;*/
 }
 article 
@@ -165,6 +166,17 @@ margin-left: 40px
 .float-right { float: right; margin: 10px 0 10px 10px;}
 
 /* Stop 2023-10-06 dostosowywanei Budowa-podstron */
+#sidebar-key
+{
+	width: 25%;
+	text-align: center;
+	border-right: 1px sold #dddddd;
+	margin-right: 10px;
+	
+}
+#sidebar-key section:first-of-type {margin-top 0;}
+#sidebar-key h2 { margin-top: 0; margin-bottom: 14px; font-size: 0.8em; }
+
 
 #main-header
 {
