@@ -13,7 +13,7 @@ body
     padding: 20px 30px;
     border: 6px solid #eaeaea;
     color: #646363;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Average Sans', Amiko, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
 }
 
@@ -25,7 +25,7 @@ h1
 	background-color: white;
 	color: #646263;
 	font-variant-caps: petite-caps;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Average Sans', Amiko, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-stretch: extra-expanded;
 }
 h2
@@ -33,7 +33,7 @@ h2
 	margin-bottom: 0;
 	margin-top: 30px;
 	font-variant-caps: petite-caps;
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Average Sans', Amiko, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h3 
@@ -44,7 +44,7 @@ h3
 p 
 {
 	margin-top: 5px;
-	font-family: Noto Serif Makasar, Grandiflora One;
+	font-family: 'Average Sans', Amiko, Noto Serif Makasar, Grandiflora One;
 }
 
 .a 
@@ -108,22 +108,7 @@ main > article h2:first-of-type
 	text-align: center;
 } 	
 
-#main-footer 
-{
-	margin-top: 60px;
-	padding-top: 20px;
-	text-align: center;
-	border-top: 1px solid #dddddd;
 
-}
-
-#main-footer a {
-	text-decoration: underline;
-  }
-
-  #main-footer a:hover {
-	text-decoration: none;
-  }
 
 .featured 
 {
@@ -141,7 +126,7 @@ main > article h2:first-of-type
 #sidebar 
 {
 /* background-color: lightpink; */
-width: 30%;
+width: 25%;
 text-align: left;
 border-left: 1px solid #dddddd;
 margin-left: 40px
@@ -156,7 +141,7 @@ margin-left: 40px
 }
 
 #sidebar section:first-of-type { margin-top: 0;}
-#sidebar  h2 { margin-top: 0; margin-bottom: 14px; font-size: 1.2em}
+#sidebar  h2 { margin-top: 0; margin-bottom: 14px; font-size: 1.2em; text-align:center;}
 #sidebar ul { list-style-type: none; margin:0; padding:0; font-size: 95%;}
 #sidebar li { margin-bottom: 7px; }
 #sidebar a { color: #786d6d; }
@@ -169,14 +154,16 @@ margin-left: 40px
 #sidebar-key
 {
 	width: 25%;
-	text-align: center;
-	border-right: 1px sold #dddddd;
-	margin-right: 10px;
+	text-align: left;
+	border-right: 1px solid #dddddd;
+	margin-right: 40px;
+	font-size:0.9em;
 	
 }
 #sidebar-key section:first-of-type {margin-top 0;}
-#sidebar-key h2 { margin-top: 0; margin-bottom: 14px; font-size: 0.8em; }
-
+#sidebar-key h2 { margin-top: 0; margin-bottom: 14px; text-align: center; font-size: 0.9em; }
+#sidebar-key ul { list-style-type: none; margin:0; padding:0; font-size: 98%;}
+#sidebar-key li { margin-bottom: 7px; }
 
 #main-header
 {
@@ -214,11 +201,13 @@ margin-left: 40px
 	border: 1px solid #dddddd;
 	background-color: #ffffff;
 	padding: 15px 0;
-	font-size: 90%;
+	font-size: 120%;
 	position: absolute;
 	display: none;
 	white-space: nowrap;
+	
 }
+
 
 #main-header nav li:hover div {
   display: block;
@@ -230,6 +219,7 @@ margin-left: 40px
 	margin: 0 15px 12px 20px;
 	margin: 0 15px 12px 20px;
 	color: red;
+	font-family: 'Average Sans', Amiko;
 	
 }
 
@@ -238,3 +228,21 @@ margin-left: 40px
 	margin-bottom: 0;
 }
 
+#main-footer 
+{
+	margin-top: 60px;
+	padding-top: 20px;
+	text-align: center;
+	border-top: 1px solid #dddddd;
+	font-family: 'Average Sans', Amiko;
+	font-size: 0.9em;
+
+}
+
+#main-footer a {
+	text-decoration: underline;
+  }
+
+  #main-footer a:hover {
+	text-decoration: none;
+  }
