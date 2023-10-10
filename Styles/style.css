@@ -13,7 +13,7 @@ body
     padding: 20px 30px;
     border: 6px solid #eaeaea;
     color: #646363;
-    font-family: 'Average Sans', Amiko, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', 'Average Sans', Amiko, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
 }
 
@@ -25,7 +25,7 @@ h1
 	background-color: white;
 	color: #646263;
 	font-variant-caps: petite-caps;
-	font-family: 'Average Sans', Amiko, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Segoe UI','Average Sans', Amiko, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-stretch: extra-expanded;
 }
 h2
@@ -33,7 +33,7 @@ h2
 	margin-bottom: 0;
 	margin-top: 30px;
 	font-variant-caps: petite-caps;
-	font-family: 'Average Sans', Amiko, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Segoe UI','Average Sans', Amiko, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h3 
@@ -44,7 +44,7 @@ h3
 p 
 {
 	margin-top: 5px;
-	font-family: 'Average Sans', Amiko, Noto Serif Makasar, Grandiflora One;
+	font-family: 'Segoe UI','Average Sans', Amiko, Noto Serif Makasar, Grandiflora One;
 }
 
 .a 
