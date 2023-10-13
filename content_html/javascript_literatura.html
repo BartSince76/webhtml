@@ -2,8 +2,8 @@
 <html lang="pl" >
     <head>
         <meta charset="utf-8" name="Opis strony html" content="Strona opisuje elementy, które tworzą strukturę strony html"> <!--Komentarz 20230928-->
-        <title>Warsztat HTML. Typografia</title>
-        <description>informacje techniczne związane z projektowaniem stron WWW w języku HTML, JavaScript, CSS</description>
+        <title>Karta okna przeglądarki - &lttitle&gt Struktura dokumentu html </title>
+        
         <link href="https://fonts.googleapis.com/css?family=Poppins|Mooli" rel="stylesheet"> <!-- https://developers.google.com/fonts/docs/getting_started?hl=pl -->
         <link href="https://fonts.googleapis.com/css?family=Poppins|Tangerine|Inconsolata|Droid+Sans|Oswald" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Serif+Makasar|Grandiflora+One" rel="stylesheet">
@@ -17,12 +17,12 @@
 <body id="home">
     <header id="main-header">
         <hgroup>
-            <h1>&#9831; Projektowanie WEB - Typografia &#9831;</h1>
+            <h1>&#9831; Projektowanie WEB - JavaScript Literatura&#9831;</h1>
             <p>INTERESUJĘCE &#149; WCIĄGAJĄCE &#149; WZRUSZAJĄCE</p>
             <nav>
 				<ul>
 					<li><a href="../index.html">Główna</a></li>
-					<li><a href="#">Typografia</a>
+					<li><a href="../content_html/typografia.html">Typografia</a>
 						<div>
 							<a href="https://shebang.pl/">Historia</a>
 							<a href="https://www.kurshtml.edu.pl/">Czcionka</a>
@@ -52,7 +52,7 @@
 							<a href="https://webkod.pl/">W E B K O D</a>
 						</div>
 					</li>
-					<li><a href="../content_html/paulo_erdosie.html">Paul Erdős <em>przykład</em></a></li>
+					<li><a href="/content_html/paulo_erdosie.html">Paul Erdős <em>przykład</em></a></li>
 					<li><a href="JavaScript01/ImageShow5Seconds.htm">Java Scipt</a></li>
 					<li><a href="content_html/znaczniki_html.html">Znaczniki</a></li>
 				</ul>
@@ -60,39 +60,54 @@
         </hgroup>
     </header>
 <div id="site-content">
-	<aside id="sidebar-key">
-			<section>
-				<h2>Słowa kluczowe</h2>
-					<ul>	
-						<li>Kroje pisma</li>
-						<li>Czcionka szeryfowa</li>
-						<li>pismo bezszeryfowe</li>
-					</ul>
-			</section>
-		</aside>
+	
 	<main>
-		<article >
-			<h2>Typografia</h2>
-			<p><strong>Czcionka</strong> to słowo określająca podstawowy materiał zecerski używany w technice druku wypukłego, np. w drukarni.
-			M</p>
-			<p><strong>Font</strong> to wszystko to, co widzimy, np. w tym artykule, pisząc coś w Wordzie czy drukując dokument.</p>
-				<img src="img/chlopiec-dzwonek.png" alt="Tere fere dutki, krasnoludek malutki" class="featured">
+		<article class="ArticleOne">
+		<div style="margin-left:0px; margin-right:10px;">
+			<h2>LITERATURA</h2>
+			<ul >
+				<li>Chwałkowski Robert, Typografia typowej książki , Helion Gliwice 2002</li>
+				<li>Kowalczyk Grzegorz, Word 2010 PL, Helion Gliwice 2010</li>
+				<li>Malinowska Tekla, SYTA Ludwik: Redagowanie techniczne książki ; WNT Warszawa 1977</li>
+				<li>Sikorski Witold, Podstawy edycji tekstów, WITKOM (Salma Press) Warszawa 2011</li>
+				<li>Wheeler Susan, Wheeler Garry, Typografia komputerowa , Exit Warszawa</li>
+				<li>Williams Robin, Mistrzowskie stosowanie czcionek; Wyd. Helion Gliwice 2003,</li>
+				<li>Wolański Adam, Edycja tekstów — praktyczny poradnik Wydawnictwo Naukowe PWN Warszawa 2008</li>
+			</ul>
+		</div>
+		<div style="margin-left:10px; margin-right:0px;">
+			<h2>ŹRÓDŁA</h2>
+			<ul>
+			<li>MS STUDIO grupa., <em>Zasady typograficzne składania tekstu.</em><a href="http://dtp.msstudio.com.pl/">http://dtp.msstudio.com.pl/</a> [dostęp: 09 stycznia 2010]</li>
+			<li>Chwałowski Robert.,<em>Gutenberg etc</em><a href="https://typografia.info/artykuly/gutenberg-etc">https://typografia.info</a> [dostęp: 11 stycznia 2021] </li>
+			<li>Kowalczyk Grzegorz: Word 2010 PL, Helion Gliwice 2010</li>
+			<li>Malinowska Tekla, SYTA Ludwik: Redagowanie techniczne książki ; WNT Warszawa 1977</li>
+			<li>Sikorski Witold: Podstawy edycji tekstów, WITKOM (Salma Press) Warszawa 2011</li>
+			<li>Wheeler Susan, Wheeler Garry: Typografia komputerowa , Exit Warszawa</li>
+			<li>Williams Robin: Mistrzowskie stosowanie czcionek; Wyd. Helion Gliwice 2003,</li>
+			<li>Wolański Adam: Edycja tekstów — praktyczny poradnik Wydawnictwo Naukowe PWN Warszawa 2008</li>
+			</ul>
+		</div>
+		
+		</article>
+		<article>
 					<p class="a">Zasady Dobrego Składu</p>
 					<p class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate mi a ipsum auctor, eget vestibulum ipsum tempor. Morbi pharetra sem sed euismod mollis. Nulla facilisi. Aliquam et accumsan nunc. Vivamus faucibus, orci vel consectetur condimentum, nunc mauris dictum mauris, a ultricies magna mauris quis tellus. Morbi et ullamcorper lectus,
-		sit amet dictum ipsum. <span class="d">TO JEST ELEMENT SPAN!!!</span> Nam tempor arcu in metus vulputate, ac pretium turpis pharetra. Cras viverra semper lorem ac varius.</p>
-		<p class="c">Mauris a eleifend erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam non nibh felis. Maecenas elementum, turpis ultrices aliquam mattis, nisi neque sodales quam, non sollicitudin erat mauris at neque.</p>
-		<p> In hac habitasse platea dictumst. Nullam vitae commodo nunc. Proin tempus orci a aliquet volutpat.
-		Curabitur dictum porttitor neque, a laoreet nulla iaculis vitae. Sed enim nulla, euismod non tortor ut, aliquet auctor turpis.</p>
+					sit amet dictum ipsum. <span class="d">TO JEST ELEMENT SPAN!!!</span> Nam tempor arcu in metus vulputate, ac pretium turpis pharetra. Cras viverra semper lorem ac varius.</p>
+					<p class="c">Mauris a eleifend erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam non nibh felis. Maecenas elementum, turpis ultrices aliquam mattis, nisi neque sodales quam, non sollicitudin erat mauris at neque.</p>
+					<p>In hac habitasse platea dictumst. Nullam vitae commodo nunc. Proin tempus orci a aliquet volutpat.
+					Curabitur dictum porttitor neque, a laoreet nulla iaculis vitae. Sed enim nulla, euismod non tortor ut, aliquet auctor turpis.</p>
 				
-		<p>Piękny ten akapit, w nim ukryty prawdy sens</p>
-		<p>Gdyby nie resztka poczucia humoru, można by sądzić, że tytuł jest całkiem serio. Tymczasem pobrzmiewa w nim nuta ironii czytelna dla Koleżanek i Kolegów od pierwszej sylaby. Dla zarobkującego piórem felietonisty z działu, powiedzmy, kulturalno gospodarczego, cotygodniowa porcja petitu od Sasa do Lasa na temat, powiedzmy, »Kwadrologia Księżyca a Prywatyzacja Prany Bałtyckiej«, jest okazją do »włączenia się w powszechną debatę…« itd. bez żadnych konsekwencji. Należy bowiem do dobrego tonu być człowiekiem z towarzystwa. Towarzystwo natomiast tworzą obecnie tzw. ludzie interesu. W towarzystwie już nie mówi się po francusku, mówi się o pieniądzach. Podstawą zaś robienia wszelkiej kasy jest dzisiaj procent, prowizja, marża słowem każdy »obryw«, na jaki zezwala pragmatyka wolnego rynku. Dla pełnego obrazu rzeczywistości należy dodać, że zasadniczo strefę pogromu i regresu stanowi ten sektor prywatnej aktywności, gdzie naiwność podpowiada, że można wyżyć z pracy rąk.</p>
-		<P>Elementy parzyste</P>
-		<p>Elementy blokowe</p>
-		<p>Elementy śródliniowe</p>
-		<div lang="pl">To jest język angielski ale po polsku</div>
-		<p>I'm hosted with GitHub Pages.</p>
-		<p><a href="JavaScript01/ImageShow5Seconds.htm">nowa strona javaScript</a></p>
-		<p><a href="Contenet.html">Content.html</a></p></article>
+					<p>Piękny ten akapit, w nim ukryty prawdy sens</p>
+					<p>Gdyby nie resztka poczucia humoru, można by sądzić, że tytuł jest całkiem serio. Tymczasem pobrzmiewa w nim nuta ironii czytelna dla Koleżanek i Kolegów od pierwszej sylaby. Dla zarobkującego piórem felietonisty z działu, powiedzmy, kulturalno gospodarczego, cotygodniowa porcja petitu od Sasa do Lasa na temat, powiedzmy, »Kwadrologia Księżyca a Prywatyzacja Prany Bałtyckiej«, jest okazją do »włączenia się w powszechną debatę…« itd. bez żadnych konsekwencji. Należy bowiem do dobrego tonu być człowiekiem z towarzystwa. Towarzystwo natomiast tworzą obecnie tzw. ludzie interesu. W towarzystwie już nie mówi się po francusku, mówi się o pieniądzach. Podstawą zaś robienia wszelkiej kasy jest dzisiaj procent, prowizja, marża słowem każdy »obryw«, na jaki zezwala pragmatyka wolnego rynku. Dla pełnego obrazu rzeczywistości należy dodać, że zasadniczo strefę pogromu i regresu stanowi ten sektor prywatnej aktywności, gdzie naiwność podpowiada, że można wyżyć z pracy rąk.</p>
+					<P>Elementy parzyste</P>
+					<p>Elementy 	blokowe</p>
+					<p>Elementy śródliniowe</p>
+					<div lang="pl">To jest język angielski ale po polsku</div>
+					<p>I'm hosted with GitHub Pages.</p>
+					<p><a href="JavaScript01/ImageShow5Seconds.htm">nowa strona javaScript</a></p>
+					<p><a href="Contenet.html">Content.html</a></p>
+		</article>
 	</main>
 	<aside id="sidebar">
 	 <section>
