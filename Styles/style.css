@@ -182,6 +182,20 @@ margin-left: 40px
 #sidebar-key ul { list-style-type: none; margin:0; padding:0; font-size: 98%;}
 #sidebar-key li { margin-bottom: 7px; }
 
+#sidebar-key-wide
+{
+	width: 40%;
+	text-align: left;
+	border-right: 1px solid #dddddd;
+	margin-right: 20px;
+	font-size:0.8em;	
+}
+
+#sidebar-key-wide section:first-of-type {margin-top 0;}
+#sidebar-key-wide h2 { margin-top: 0; margin-bottom: 14px; text-align: center; font-size: 0.9em; }
+#sidebar-key-wide ul { list-style-type: none; margin:0; padding:0; font-size: 98%;}
+#sidebar-key-wide li { margin-bottom: 7px; }
+
 #main-header
 {
 	text-align: center;
