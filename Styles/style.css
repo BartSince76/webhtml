@@ -76,7 +76,8 @@ p
 
 
 a {
-	color: #646363;
+	/* color: #646363; */
+	font-color: black;
 	text-decoration: none;
   }
   
