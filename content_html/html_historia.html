@@ -5,12 +5,15 @@
         <meta charset="utf-8" name="Opis strony html" content="Strona opisuje elementy, które tworzą strukturę strony html"> <!--Komentarz 20230928-->
         <title>Warsztat HTML. Historia powstania HTML</title>
         <meta name="description" content="informacje techniczne związane z projektowaniem stron WWW w języku HTML, JavaScript, CSS">
+		
         <link href="https://fonts.googleapis.com/css?family=Poppins|Mooli" rel="stylesheet"> <!-- https://developers.google.com/fonts/docs/getting_started?hl=pl -->
         <link href="https://fonts.googleapis.com/css?family=Poppins|Tangerine|Inconsolata|Droid+Sans|Oswald" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Serif+Makasar|Grandiflora+One" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Amiko&subset=latin,latin-ext" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Average+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 		<link href="../Styles/style.css" rel="stylesheet"> 
+		<base HREF="./"> <!-- Określa adres bazowy, względem którego będą rozwijane wszystkie odsyłacze relatywne (względne) -->
+		
         <!-- <style>p {background:burlywood;}</style> 
         <link href="style2.css" rel="stylesheet">
         <link href="style3.css" rel="stylesheet">  -->
@@ -129,23 +132,32 @@
 			Nikomu jeszcze do tej pory nie udało się wdrożyć systemu wykorzystującego łącza i odnośniki hipertekstowe na skalę światową.</p>
 
 			<h3>DNS</h3>
-			<p>Pojawienie sie w połowie lat 80 nowego systemu nadawania nazw komputerom<strong>DNS<em>(Distributed Name Service)</em></strong> uprościło w znacznym stopniu sposób korzystania z sieci internet. 
+			<p>Pojawienie sie w połowie lat 80 nowego systemu nadawania nazw komputerom <strong>DNS <em>(Distributed Name Service)</em></strong> uprościło w znacznym stopniu sposób korzystania z sieci internet. 
 			Zwykli użytkwonicy otrzymali znacznie łatwiejszy system oparty na domenach, dzięki ktoremu nie trzeba było już znać uciążliwych adresów IP.
 			<!-- W wyniku wprowadzenia <em>(Distributed Name Service)</em> obsługa sieci </p> -->
 			
 			<h3>Globalny system hipertekstowy</h3>
-			<p>Wykorzystanie na tamte czasy istniejących systemów hipertekstowych wydawało się być atrakcyjne, jednak ograniczenia jakie posiadały takie rozwiązania przekreślały możliwość zaimlementowania ich w skali globalnej. 
+			<p>Możliwość wykorzystania w tamtym czasie już istniejących systemów hipertekstowych wydawała się być bardzo atrakcyjna, jednak z uwagi na ograniczenia jakie posiadały te rozwiązania przekreślały możliwość zaimlementowania ich w skali globalnej. 
 			W dodatku istniejące zróżnicowanie systemów komputrowych podłączonych do Internetu: <em>komputry osobiste, komputery Macintosh, maszyny z systemem UNIX czy proste Terminale</em> oraz oprogramowania 
 			z którego korzystały znacząco komplikowały opracowanie jednolitej koncepcji globalnego systemu odnośników/hipertekstu.</p>
 			<p>Zaproponowane podejście przez Tim'a Berners-Lee było proste. Przy użyciu opracowanego przez siebie protokołu HTTP (HyperText Transfer Protocol) do przesyłania hipertekstu Tim przedstawił sposób pobierania innych dokumentów za pośrednictwem
 				łączy hipertekstowych. Format tekstu dla opracowanego protokołu HTTP został nazwany HTML, od języka HyperText Mark-up Language</p>
 			
 			<h3>HTML</h3>
-			Wymyślony przez Tima'a język HTML w dużej mierze oparty został na SGML (Standard Generalized Mark-up Language). Standardowy uogólniony język zanczników służący do definiowania zbiorów znaczników przeznacznonych do konkretnych zastosowań np. do oznaczania tekstu za pomocą znaczników strukturalnych takich jak akapity, nagłówki, listy, elementy list, itp. .	Uniwersalność takiego rozwiązania polegała na tym, że można było ją wdrożyć na dowolnej maszynie. Opracowany język był niezależny od formatera (przeglądarki lub innego oprogramowania przeglądającego), który faktycznie wyświetlał tekst na ekranie. Użycie par tagów, takich jak <em> &lt;TITLE&gt; &lt;/TITLE&gt;</em> zostało zaczerpnięte bezpośrednio z SGML. Elementy użyte w HTML Tima obejmowały P (akapit); H1 do H6 (nagłówki 1-6 poziomu); OL (listy uporządkowane); UL (listy nieuporządkowane); LI (elementy list) i różne inne.
-			To czego nie mógł objąć swoim zastosowaniem SGML to łącza hipertekstowe: pomysł użycia elementu kotwiczącego HREF był wyłącznym wynalazkiem Tima.
+			<p>
+			Wymyślony przez Tima'a język HTML w dużej mierze oparty został na SGML (Standard Generalized Mark-up Language). Standardowy uogólniony język zanczników służący do definiowania zbiorów znaczników przeznacznonych do konkretnych zastosowań np. 
+			do oznaczania tekstu za pomocą znaczników strukturalnych takich jak akapity, nagłówki, listy, elementy list, itp. .
+			Uniwersalność takiego rozwiązania polegała na tym, że można było ją wdrożyć na dowolnej maszynie. Opracowany język był niezależny od formatera (przeglądarki lub innego oprogramowania przeglądającego), 
+			który faktycznie wyświetlał tekst na ekranie. Użycie par tagów, takich jak <em> &lt;TITLE&gt; &lt;/TITLE&gt;</em> zostało zaczerpnięte bezpośrednio z SGML. Elementy użyte w HTML Tima obejmowały P (akapit); H1 do H6 (nagłówki 1-6 poziomu); OL (listy uporządkowane); UL (listy nieuporządkowane); LI (elementy list) i różne inne.
+			To czego nie mógł objąć swoim zastosowaniem SGML to łącza hipertekstowe: pomysł użycia elementu kotwiczącego HREF był wyłącznym wynalazkiem Tima. Podobnie jak słynny obecnie format 
+			<b><acronym lang="pl" title="Sprawdzić informacje co wspólnego miał Tim Berners-Lee z powstaniem formatu www.nazwa.nazwa">www.nazwa.nazwa</acronym></b> do adresowania maszyn w sieci.
+			</p>
+			
+			<h3>Otwarta dyskusja na temat HTML | Wrzesień 1991</h3>
+			<p>Dla adresu <samp>IP 123.141.201.74</samp><p>
 
-
-			<p>Sieć została pierwotnie wymyślona i rozwinięta, aby umożliwiać wymianę informacji między naukowcami pracującymi na uniwersytetach i w instytucjach naukowych rozproszonych po całym świecie.</p>
+			<p><a HREF="https://www.w3.org/community/webhistory/2013/04/03/restoring-the-first-website/#comment-480"> Przywracanie pierwszej strony internetowej |</a><samp>IP 123.141.201.74</samp></p> 
+			
 			
 			<p>Pierwsza strona internetowa w CERN - i na świecie była poświęcona samemu projektowi World Wide Web. Fizycznie pliki strony były hostowane na komputerze NeXT samego Bernersa-Lee.</p>
 			<p>W 2013 roku CERN uruchomił projekt mający na celu przywrócenie pierwszej w historii witryny internetowej. Aktualnie strona znajduje się pod adresem <a href="http://info.cern.ch">info.cern.ch</a>, a informacje o projekcie są dostępne pod adresem: <a href="https://first-website.web.cern.ch/first-website/">Restoring the first website</a>.</p>
@@ -155,6 +167,7 @@
 			<p>Tim Berners-Lee opracował swój pierwszy system hipertekstowy &bdquo;Enquire&rdquo; na własny użytek. Był 1980. </p>
 
 			<p><strong>Internet</strong> To, że Internet powstał na początku lat 90. XX wieku, nie jest dziełem przypadku. Rozwój technologii komunikacyjnych w tym czasie oznaczał, że prędzej czy później musiało powstać coś takiego jak Internet. Po pierwsze, hipertekst zaczął być modny i używany na komputerach. Rośnie także liczba użytkowników Internetu w systemie: rośnie liczba odbiorców rozpowszechnianych informacji. Wreszcie, nowy system nazw domen (DNS) znacznie ułatwił adresowanie komputera w Internecie.</p>
+			<p>Sieć została pierwotnie wymyślona i rozwinięta, aby umożliwiać wymianę informacji między naukowcami pracującymi na uniwersytetach i w instytucjach naukowych rozproszonych po całym świecie.</p>
 			<p><a href="https://webwavecms.com/historia-internetu">Krótka historia internetu i stron www; </a></p>
 			<p><a href="http://info.cern.ch/hypertext/WWW/TheProject.html">Przeglądaj pierwszą stronę internetową</a></p>
 			<h3>Ojcowie HiperText'u</h3>
@@ -165,6 +178,10 @@
 		<!-- <p class="c">Mauris a eleifend erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam non nibh felis. Maecenas elementum, turpis ultrices aliquam mattis, nisi neque sodales quam, non sollicitudin erat mauris at neque.</p>
 		<p> In hac habitasse platea dictumst. Nullam vitae commodo nunc. Proin tempus orci a aliquet volutpat.
 		Curabitur dictum porttitor neque, a laoreet nulla iaculis vitae. Sed enim nulla, euismod non tortor ut, aliquet auctor turpis.</p> -->
+		<h2>Bibliografia</h2>
+		<q><a href="http://infomesh.net/html/history/early/">The Early History of HTML</a></q>
+		<q><a href="https://tomayko.com/blog/2008/wtf-is-an-href-anyway">What does HREF stand for?</a></q>
+		<q><a href="https://www.w3.org/community/webhistory/2013/11/24/the-early-history-of-html/">The Early History of HTML</a></q>
 		
 		<p>Piękny ten akapit, w nim ukryty prawdy sens</p>
 		<p>Gdyby nie resztka poczucia humoru, można by sądzić, że tytuł jest całkiem serio. Tymczasem pobrzmiewa w nim nuta ironii czytelna dla Koleżanek i Kolegów od pierwszej sylaby. Dla zarobkującego piórem felietonisty z działu, powiedzmy, kulturalno gospodarczego, cotygodniowa porcja petitu od Sasa do Lasa na temat, powiedzmy, »Kwadrologia Księżyca a Prywatyzacja Prany Bałtyckiej«, jest okazją do »włączenia się w powszechną debatę…« itd. bez żadnych konsekwencji. Należy bowiem do dobrego tonu być człowiekiem z towarzystwa. Towarzystwo natomiast tworzą obecnie tzw. ludzie interesu. W towarzystwie już nie mówi się po francusku, mówi się o pieniądzach. Podstawą zaś robienia wszelkiej kasy jest dzisiaj procent, prowizja, marża słowem każdy »obryw«, na jaki zezwala pragmatyka wolnego rynku. Dla pełnego obrazu rzeczywistości należy dodać, że zasadniczo strefę pogromu i regresu stanowi ten sektor prywatnej aktywności, gdzie naiwność podpowiada, że można wyżyć z pracy rąk.</p>
@@ -180,7 +197,9 @@
 	 <section>
 		<h2>Zobacz również</h2>
 			<ul>
+				
 				<li><a href="http://info.cern.ch">Pierwsza Witryna Internetowa</a></li>
+				<li><a href="https://www.w3.org/community/webhistory/">Społęczność - Historia Sieci WWW</a><li>
 				<li><a href="http://www.taat.pl/typografia">Typografia internetowa</a></li>
 				<li><a href="https://www.kentype.pl/?menu=31&group=guide">KENTYPE - Poradnik</a></li>
 				<li><a href="https://pl.wikipedia.org/wiki/Typografia">WIKI | Typografia</a></li>

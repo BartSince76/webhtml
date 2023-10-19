@@ -34,17 +34,20 @@ h2
 	margin-top: 30px;
 	font-variant-caps: petite-caps;
 	font-family: 'Segoe UI','Average Sans', Amiko, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	
 }
 
 h3 
 {
 	margin-bottom: 0;
 	margin-top: 30px;
+	
 }
 p 
 {
 	margin-top: 5px;
 	font-family: 'Segoe UI','Average Sans', Amiko, Noto Serif Makasar, Grandiflora One;
+	font-color: red;
 }
 
 .a 
@@ -89,14 +92,24 @@ a {
  {
 	color: navy;
   }
+
+
+
 main 
 {
 margin-right: 6px;
 margin-left: 6px;	
-
-background-color: Snow;
+font-color: red;
+background-color: white;
 width: 98%;
 /* height: 200px;*/
+}
+
+main > article 
+{
+	font-size: 0.9em;
+	background: white;
+	color: #DC1400;
 }
 
 
@@ -106,7 +119,10 @@ article
 	/* flex-direction: row; */
 	overflow: auto;
 	
+	
 }
+
+
 
 .ArticleOne
 {
@@ -123,7 +139,14 @@ main > article h2:first-of-type
 	margin-top: 2pt;
 	margin-bottom: 12pt;
 	text-align: center;
-} 	
+	
+}
+
+df
+{
+	color: red;
+}
+ 	
 
 
 
@@ -141,6 +164,14 @@ main > article h2:first-of-type
 	flex-direction: row;
 }
 
+#site-content main article p 
+{
+	color: GrayText;
+ }
+ 
+ #site-content main article h2 { color: crimson;}
+ #site-content main article h3 { color: crimson;}
+
 #sidebar 
 {
 /* background-color: lightpink; */
@@ -155,14 +186,15 @@ margin-left: 40px
 {
 	margin-top:45px; 
 	padding-left: 25px;
+	/*background-color: olive;*/
 	
 }
 
 #sidebar section:first-of-type { margin-top: 0;}
-#sidebar  h2 { margin-top: 0; margin-bottom: 14px; font-size: 1.2em; text-align:center;}
+#sidebar  h2 { margin-top: 0; margin-bottom: 14px; font-size: 1.2em; text-align:center; font-color: navy;}
 #sidebar ul { list-style-type: none; margin:0; padding:0; font-size: 95%;}
 #sidebar li { margin-bottom: 7px; }
-#sidebar a { color: #786d6d; }
+#sidebar a { color: #786d6d;  }
 
 .centered-img {display: block; margin: 30px auto;}
 
