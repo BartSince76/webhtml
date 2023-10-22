@@ -141,6 +141,9 @@ main > article h2:first-of-type
 	
 }
 
+main article div > p
+{color:#f709eb}
+
 df
 {
 	color: red;
@@ -188,38 +191,6 @@ df
 	width:80%;
 	
  }
-
- 
-#html-structure h2
-{
-	background-color: rgb(116, 206, 218);
-	color: pink;
-	
-	padding-top: 5px;
-	padding-bottom: 5px;
-	text-align:center;
-
-}
-
-#html-structure h3:first-of-type
-{
-	background-color: rgb(181, 113, 245);
-	color: greenyellow;
-	font-size: 6em;
-}
-
-
-#html-structure h3
-{
-	background-color: rgb(140, 156, 50);
-	font-size: 3.8em;
-	text-align: center;
-	color: yellowgreen;
-	font-variant-caps: all-petite-caps;
-	background-color: burlywood;
-	margin:   5% 5% 5% 5%;
-	height: 12em;
-}
 
 #sidebar 
 {
