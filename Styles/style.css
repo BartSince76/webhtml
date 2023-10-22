@@ -22,7 +22,6 @@ h1
 	
 	margin-bottom: 0;
 	margin-top: 26px;
-	background-color: white;
 	color: #646263;
 	font-variant-caps: petite-caps;
 	font-family: 'Segoe UI','Average Sans', Amiko, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,7 +33,7 @@ h2
 	margin-top: 30px;
 	font-variant-caps: petite-caps;
 	font-family: 'Segoe UI','Average Sans', Amiko, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	
+	color:blue;
 }
 
 h3 
@@ -47,7 +46,7 @@ p
 {
 	margin-top: 5px;
 	font-family: 'Segoe UI','Average Sans', Amiko, Noto Serif Makasar, Grandiflora One;
-	font-color: red;
+	color: red;
 }
 
 .a 
@@ -80,7 +79,7 @@ p
 
 a {
 	/* color: #646363; */
-	font-color: black;
+	color: black;
 	text-decoration: none;
   }
   
@@ -99,7 +98,7 @@ main
 {
 margin-right: 6px;
 margin-left: 6px;	
-font-color: red;
+color: red;
 background-color: white;
 width: 98%;
 /* height: 200px;*/
@@ -172,6 +171,56 @@ df
  #site-content main article h2 { color: crimson;}
  #site-content main article h3 { color: crimson;}
 
+
+ .TestClass
+{
+	
+	display: flex;
+	flex-direction: column;
+	
+}
+
+#html-structure
+ {
+	background-color: rgb(116, 206, 218);
+	font-family: 'Courier New', Courier, monospace, 'Segoe UI', Tahoma;
+	color: whitesmoke;
+	width:80%;
+	
+ }
+
+ 
+#html-structure h2
+{
+	background-color: rgb(116, 206, 218);
+	color: pink;
+	
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align:center;
+
+}
+
+#html-structure h3:first-of-type
+{
+	background-color: rgb(181, 113, 245);
+	color: greenyellow;
+	font-size: 6em;
+}
+
+
+#html-structure h3
+{
+	background-color: rgb(140, 156, 50);
+	font-size: 3.8em;
+	text-align: center;
+	color: yellowgreen;
+	font-variant-caps: all-petite-caps;
+	background-color: burlywood;
+	margin:   5% 5% 5% 5%;
+	height: 12em;
+}
+
 #sidebar 
 {
 /* background-color: lightpink; */
@@ -191,7 +240,7 @@ margin-left: 40px
 }
 
 #sidebar section:first-of-type { margin-top: 0;}
-#sidebar  h2 { margin-top: 0; margin-bottom: 14px; font-size: 1.0em; text-align:center; font-color: navy;}
+#sidebar h2 { margin-top: 0; margin-bottom: 14px; font-size: 1.0em; text-align:center; color: rgb(78, 78, 192);}
 #sidebar ul { list-style-type: none; margin:0; padding:0; font-size: 95%;}
 #sidebar li { margin-bottom: 7px; }
 #sidebar a { color: #786d6d;  }
@@ -210,7 +259,7 @@ margin-left: 40px
 	font-size:0.9em;
 	
 }
-#sidebar-key section:first-of-type {margin-top 0;}
+#sidebar-key section:first-of-type {margin-top: 0;}
 #sidebar-key h2 { margin-top: 0; margin-bottom: 14px; text-align: center; font-size: 0.9em; }
 #sidebar-key ul { list-style-type: none; margin:0; padding:0; font-size: 98%;}
 #sidebar-key li { margin-bottom: 7px; }
@@ -224,7 +273,7 @@ margin-left: 40px
 	font-size:0.8em;	
 }
 
-#sidebar-key-wide section:first-of-type {margin-top 0;}
+#sidebar-key-wide section:first-of-type {margin-top: 0;}
 #sidebar-key-wide h2 { margin-top: 0; margin-bottom: 14px; text-align: center; font-size: 0.9em; }
 #sidebar-key-wide ul { list-style-type: none; margin:0; padding:0; font-size: 98%;}
 #sidebar-key-wide li { margin-bottom: 7px; }
