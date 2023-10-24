@@ -2,8 +2,9 @@
 <html lang="pl" >
     <head>
         <meta charset="utf-8" name="Opis strony html" content="Strona opisuje elementy, które tworzą strukturę strony html"> <!--Komentarz 20230928-->
-        <title>Warsztat HTML. Typografia</title>
-        <description>informacje techniczne związane z projektowaniem stron WWW w języku HTML, JavaScript, CSS</description>
+        <title>Warsztat HTML. Struktura dokumentu html.</title>
+		<meta name="Author" content="Bartholomew">
+		<meta name="description" content="Projektowanie stron www | Budowa i struktura dokumentu HTML | informacje techniczne związane z WWW, HTML, JavaScript, CSS" >
         <link href="https://fonts.googleapis.com/css?family=Poppins|Mooli" rel="stylesheet"> <!-- https://developers.google.com/fonts/docs/getting_started?hl=pl -->
         <link href="https://fonts.googleapis.com/css?family=Poppins|Tangerine|Inconsolata|Droid+Sans|Oswald" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Serif+Makasar|Grandiflora+One" rel="stylesheet">
@@ -14,9 +15,10 @@
         <link href="style2.css" rel="stylesheet">
         <link href="style3.css" rel="stylesheet">  -->
 		<style>
-			#html-structure {background-color:rgb(245, 245, 22); color: gray;}
-			#html-structure-html {background-color:burlywood; color:yellowgreen}
-			#html-structure-html h2 {background-color:burlywood; color:yellowgreen}
+			#html-structure {background-color:DarkGray; color: white; text-align:center; width:90%; margin: 0 auto 0 auto; }
+			#html-structure h2:first-of-type { color:WhiteSmoke; margin:5px 5px 5px 5px; padding: 3% 0 3% 0;}		
+			#html-structure h2:nth-of-type(2) { background-color:Gray; color: WhiteSmoke; margin: 0 5% 3% 5%; padding: 2% 0 4% 0;}		
+			#html-structure h2:last-of-type { background-color: DimGray; color: WhiteSmoke; margin: 0 5% 3% 5%; padding: 2% 0 18% 0;}		
 		</style>
     </head>
 <body id="home">
@@ -80,46 +82,38 @@
 			<section>
 				<h2>Słowa kluczowe</h2>
 					<ul>	
-						<li>Kroje pisma</li>
-						<li>Czcionka szeryfowa</li>
-						<li>pismo bezszeryfowe</li>
+						<li>(DTD) Prolog</li>
+						<li>(HTML) Korzeń dokumentu</li>
+						<li>(HEAD) Część nagłówkowa</li>
+						<li>(BODY) Ciało dokumentu </li>
+						<li>...</li>
 					</ul>
 			</section>
 		</aside>
 	<main>
 		<article >
-			<h2>Jak wygląda struktura dokumentu HTML</h2>
-			<p><strong>Czcionka</strong> to słowo określająca podstawowy materiał zecerski używany w technice druku wypukłego, np. w drukarni.
-			M</p>
-			<p><strong>Font</strong> to wszystko to, co widzimy, np. w tym artykule, pisząc coś w Wordzie czy drukując dokument.</p>
+			<h2>Jak wygląda struktura dokumentu HTML</h2>	
+			<p>Struktura dokumentu HTML składa się z tzw. DTD ang. Document Type Declaration <em>(Deklarację Typu Dokumentu)</em>, Nagłówka dokumentu (treść nagłówkowa), Ciała dokumentu (treść właściwa). </p>
 				
-			
-			<div id="html-structure">
-				<div id="html-structure-html">
-					<p>HTML</p>
-					<div id="html-structure-head"><p>HEAD</p></div>
-					<div id="html-structure-body"><p>BODY</p></div>
-				</div>							
-			</div>	
-
-				
-				<img src="img/chlopiec-dzwonek.png" alt="Tere fere dutki, krasnoludek malutki" class="featured">
-					<p class="a">Zasady Dobrego Składu</p>
-					<p class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate mi a ipsum auctor, eget vestibulum ipsum tempor. Morbi pharetra sem sed euismod mollis. Nulla facilisi. Aliquam et accumsan nunc. Vivamus faucibus, orci vel consectetur condimentum, nunc mauris dictum mauris, a ultricies magna mauris quis tellus. Morbi et ullamcorper lectus,
-			sit amet dictum ipsum. <span class="d">TO JEST ELEMENT SPAN!!!</span> Nam tempor arcu in metus vulputate, ac pretium turpis pharetra. Cras viverra semper lorem ac varius.</p>
-			<p class="c">Mauris a eleifend erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam non nibh felis. Maecenas elementum, turpis ultrices aliquam mattis, nisi neque sodales quam, non sollicitudin erat mauris at neque.</p>
-			<p> In hac habitasse platea dictumst. Nullam vitae commodo nunc. Proin tempus orci a aliquet volutpat.
-			Curabitur dictum porttitor neque, a laoreet nulla iaculis vitae. Sed enim nulla, euismod non tortor ut, aliquet auctor turpis.</p>
-					
-			<p>Piękny ten akapit, w nim ukryty prawdy sens</p>
-			<p>Gdyby nie resztka poczucia humoru, można by sądzić, że tytuł jest całkiem serio. Tymczasem pobrzmiewa w nim nuta ironii czytelna dla Koleżanek i Kolegów od pierwszej sylaby. Dla zarobkującego piórem felietonisty z działu, powiedzmy, kulturalno gospodarczego, cotygodniowa porcja petitu od Sasa do Lasa na temat, powiedzmy, »Kwadrologia Księżyca a Prywatyzacja Prany Bałtyckiej«, jest okazją do »włączenia się w powszechną debatę…« itd. bez żadnych konsekwencji. Należy bowiem do dobrego tonu być człowiekiem z towarzystwa. Towarzystwo natomiast tworzą obecnie tzw. ludzie interesu. W towarzystwie już nie mówi się po francusku, mówi się o pieniądzach. Podstawą zaś robienia wszelkiej kasy jest dzisiaj procent, prowizja, marża słowem każdy »obryw«, na jaki zezwala pragmatyka wolnego rynku. Dla pełnego obrazu rzeczywistości należy dodać, że zasadniczo strefę pogromu i regresu stanowi ten sektor prywatnej aktywności, gdzie naiwność podpowiada, że można wyżyć z pracy rąk.</p>
-			<P>Elementy parzyste</P>
-			<p>Elementy blokowe</p>
-			<p>Elementy śródliniowe</p>
-			<div lang="pl">To jest język angielski ale po polsku</div>
-			<p>I'm hosted with GitHub Pages.</p>
-			<p><a href="JavaScript01/ImageShow5Seconds.htm">nowa strona javaScript</a></p>
-			<p><a href="Contenet.html">Content.html</a></p>
+				<div id="html-structure">
+					<h2>HTML</h2>
+					<h2>HEAD</h2>
+					<h2>BODY</h2><br>
+				</div>
+				<div id="html-structure2">
+					<code>&lt;!DOCTYPE=html&gt;</code>
+					<div id="struct-html">
+						<h2>HTML</h2>
+						
+					</div>
+					<div>
+						<h2>HEAD</h2>
+						<div><code>&lt;HEAD&gt; &lt;/HEAD&gt;</code></div>
+					</div>
+					<div><h2>BODY</h2></div>
+					<br>
+				</div>
+			<h2>Podsumowanie</h2>
 		</article>
 		<article title="">
 
