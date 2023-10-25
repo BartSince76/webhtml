@@ -2,9 +2,11 @@
 <html lang="pl" >
     <head>
         <meta charset="utf-8" name="Opis strony html" content="Strona opisuje elementy, które tworzą strukturę strony html"> <!--Komentarz 20230928-->
-        <title>Warsztat HTML. Struktura dokumentu html.</title>
+        <title>Nauka o języku HTML. Struktura dokumentu html.</title> <!-- nie przekraczać w tytula 40znaków? -->
 		<meta name="Author" content="Bartholomew">
 		<meta name="description" content="Projektowanie stron www | Budowa i struktura dokumentu HTML | informacje techniczne związane z WWW, HTML, JavaScript, CSS" >
+		<meta name="keywords" content="projektowanie, html, css, java script, metodologia, nauka">
+		
         <link href="https://fonts.googleapis.com/css?family=Poppins|Mooli" rel="stylesheet"> <!-- https://developers.google.com/fonts/docs/getting_started?hl=pl -->
         <link href="https://fonts.googleapis.com/css?family=Poppins|Tangerine|Inconsolata|Droid+Sans|Oswald" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Serif+Makasar|Grandiflora+One" rel="stylesheet">
@@ -15,12 +17,18 @@
         <link href="style2.css" rel="stylesheet">
         <link href="style3.css" rel="stylesheet">  -->
 		<style>
-			#html-structure {background-color:DarkGray; color: white; text-align:center; width:90%; margin: 0 auto 0 auto; }
+			#html-structure {display:none; background-color:DarkGray; color: white; text-align:center; width:90%; margin: 0 auto 0 auto; }
 			#html-structure h2:first-of-type { color:WhiteSmoke; margin:5px 5px 5px 5px; padding: 3% 0 3% 0;}		
 			#html-structure h2:nth-of-type(2) { background-color:Gray; color: WhiteSmoke; margin: 0 5% 3% 5%; padding: 2% 0 4% 0;}		
 			#html-structure h2:last-of-type { background-color: DimGray; color: WhiteSmoke; margin: 0 5% 3% 5%; padding: 2% 0 18% 0;}	
 			
-			#html-structure2 {background-color:DarkGray; color: white; text-align:center; width:90%; margin: 0 auto 0 auto;}
+			#html-structure2 {background-color:DarkGray; color: white; text-align:left; width:90%; margin: 0 auto 0 auto;}
+			#html-structure2 code {font-size:1.2em; font-weight:semi;}
+			#html-structure2 div:first-of-type {margin-left:2%; margin-right:4%; }
+			#html-structure2 div:last-of-type {margin-left:2%; margin-right:4%; }
+			#html-structure2 div {margin-left:4%; margin-right:4%; }
+			#html-structure2 div h2 {color:WhiteSmoke; }
+			
 			#struct-html-html {background-color: DarkGray; color:WhiteSmoke; margin:5px 5px 5px 5px; padding: 3% 0 3% 0;}
 			#struct-html-head {background-color: 	Gray; color:WhiteSmoke; margin:5px 5px 5px 5px; padding: 3% 0 3% 0;}
 			#struct-html-body {background-color: 	Gray; color:WhiteSmoke; margin:5px 5px 5px 5px; padding: 3% 0 3% 0;}
@@ -107,26 +115,27 @@
 				</div><br>
 				
 				<div id="html-structure2">
-					
+					<code>&lt;!DOCTYPE=html&gt;</code>
 					<div id="struct-html-html">
-						<div><code>&lt;!DOCTYPE=html&gt;</code></div>
-						
 						<h2>HTML</h2> 						
-								<div><code>&lt;html&gt;</code><br></div>
-											
+							<div><code>&lt;html&gt;</code></div>						
 					<div id="struct-html-head">
 						<h2>HEAD</h2>
-						<div><code>&lt;head&gt; <br><br>
-							<h2>HEAD</h2>
+						<div><code>&lt;head&gt; <br>&lt;meta="HTTP-EQUIV="content-type" CONTENT-"text/html; charset=utf-8"&gt;<br>
+							&lt;title="Tytuł strony - max 40znak./wysw.na karcie przegl."&gt;<br>
+							&lt;meta name="Description" content="treść opisu"&gt;<br>
+							&lt;meta name="Keywords" content="html, java script, css"&gt;<br>
+							&lt;meta name="Author" content="Jack Sparrow"&gt;
+							
 							<br><br> &lt;/head&gt;</code></div>
 					</div>
-				
-						 
-						<div id="struct-html-body"><h2>BODY</h2></div>
-						<br>
-						
+					<div id="struct-html-body">
+						<h2>BODY</h2>
+						<div>
+							<code>&lt;body&gt;<br>&nbsp;&nbsp;.<br>&nbsp;&nbsp;.<br>&nbsp;&nbsp;.<br>&lt;/body&gt;</code>
+						</div>
+					</div>
 						<div><code>&lt;/html&gt;</code></div>
-						
 					</div>
 				</div> 
 			<h2>Podsumowanie</h2>
