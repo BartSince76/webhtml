@@ -205,7 +205,7 @@ margin-left: 40px
 
 #sidebar section:first-of-type { margin-top: 0;}
 #sidebar h2 { margin-top: 0; margin-bottom: 14px; font-size: 1.0em; text-align:center; color: rgb(78, 78, 192);}
-#sidebar ul { list-style-type: none; margin:0; padding:0; font-size: 95%;}
+#sidebar ul { list-style-type: none; margin:0; padding:0; font-family: Imbue, oswald; font-weight:lighter; font-size: 0.8em;}
 #sidebar li { margin-bottom: 7px; }
 #sidebar a { color: #786d6d;  }
 
@@ -284,7 +284,6 @@ margin-left: 40px
 	white-space: nowrap;
 	
 }
-
 
 #main-header nav li:hover div {
   display: block;
