@@ -106,7 +106,8 @@
 	</aside>
 	<main>
 		<article >
-			<h2>Jak wygląda struktura dokumentu HTML</h2>	
+			<h2 id="Wprowadzenie">Jak wygląda struktura dokumentu HTML</h2>	
+			
 			<p>Struktura dokumentu HTML składa się z tzw. DTD ang. Document Type Declaration <em>(Deklarację Typu Dokumentu)</em>, Nagłówka dokumentu (treść nagłówkowa), Ciała dokumentu (treść właściwa). </p>
 				
 				<div id="html-structure">
@@ -139,7 +140,9 @@
 						<div><code>&lt;/html&gt;</code></div>
 					</div>
 				</div> 
-			<h2>Podsumowanie</h2>
+			<h3>DTD (Deklaracja typu dokumentu)</h3>
+			<p> Prolog zawiere informacje, w której wersji języka jest napisany dokument html.</p> 
+			<h2 id="Podsumowanie">Podsumowanie</h2>
 		</article>
 		<article title="To mój artykul">
 
@@ -147,13 +150,25 @@
 	</main>
 	<aside id="sidebar">
 		 <section>
-			<h2>Struktura HTML</h2>
+			<h2>W tym artykule</h2>
 			<!-- <img src="img/newsboy.png" alt="Chłopiec z gazetą" width="150" height="240" class="centered-img"> -->
+			<ul>
+				<li><a href="#Wprowadzenie">Początek</a></li>
+				<li><a href="#DTD">Prolog | Deklaracja Typu Dokumentu</a></li>
+				<li><a href="#Podsumowanie">Podsumowanie</a></li>
+				<li><a href="#stopka">Stopka</a></li>
+				
+				
+				<li><a href="#stopka">stopka</a></li>
+			</ul>
+		 </section>
+		 <section>
+			<h2>Powązane tematy</h2>
 		 </section>
 		 <section>
 			<h2>Zobacz również</h2>
 			<ul>
-				<li><a href="https://ifj.edu.pl/private/krawczyk/kurshtml/struktur/struktur.htm">ifj.edu.pl | Struktura dokumentu</a></li>
+				<li><a href="https://ifj.edu.pl/private/krawczyk/kurshtml/struktur/struktur.htm">ifj.edu.pl | Struktura dokumentu HTML</a></li>
 				<li><a href="https://how2html.pl/html-head-body/">how2html | html-head-body</a></li>
 				<li><a href="https://shebang.pl/html/struktura-dokumentu-html/">shebang.pl | html-head-body</a></li>
 
@@ -183,7 +198,7 @@
 	</aside>
 </div> <!-- Koniec site-content -->
 <footer id="main-footer">
-    <p>aktualizacja 20230925 22:27 | o nas | corporight &copy; Kowal 2023 | <a href="">Kontakt</a> | </p>
+    <p id="stopka">aktualizacja 20230925 22:27 | o nas | corporight &copy; Kowal 2023 | <a href="">Kontakt</a> | </p>
 
 </footer>
     

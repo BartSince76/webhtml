@@ -46,7 +46,7 @@ p
 {
 	margin-top: 5px;
 	font-family: 'Segoe UI','Average Sans', Amiko, Noto Serif Makasar, Grandiflora One;
-	color: Gray;
+	color: Black;
 }
 
 .a 
@@ -168,7 +168,7 @@ df
 
 #site-content main article p 
 {
-	color: GrayText;
+	color: DarkSlatBlue;
  }
  
  /* #site-content main article h2 { color: crimson;}*/
@@ -205,9 +205,10 @@ margin-left: 40px
 
 #sidebar section:first-of-type { margin-top: 0;}
 #sidebar h2 { margin-top: 0; margin-bottom: 14px; font-size: 1.0em; text-align:center; color: rgb(78, 78, 192);}
-#sidebar ul { list-style-type: none; margin:0; padding:0; font-family: Imbue, oswald; font-weight:lighter; font-size: 0.8em;}
+/* #sidebar ul { list-style-type: none; margin:0; padding:0; font-family: Imbue, oswald; font-weight:lighter; font-size: 0.8em;} */ 
+#sidebar ul { list-style-type: none; margin:0; padding:0; font-family:  'Sofia Sans Extra Condensed' ; font-weight: Thin; font-size: 1em; color: black;}
 #sidebar li { margin-bottom: 7px; }
-#sidebar a { color: #786d6d;  }
+#sidebar a { color: black /* #786d6d;  */ }
 
 .centered-img {display: block; margin: 30px auto;}
 
