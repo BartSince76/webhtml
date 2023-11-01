@@ -40,7 +40,7 @@
     <header id="main-header">
         <hgroup>
             <h1>&#9831; Projektowanie WEB - struktura dokumentu HTML &#9831;</h1>
-            <p>INTERESUJĘCE &#149; WCIĄGAJĄCE &#149; WZRUSZAJĄCE</p>
+            <p>interesujący &#149; intrygujący &#149; pouczające</p>
             <nav>
 				<ul>
 					<li><a href="../index.html">Główna</a></li>
@@ -114,16 +114,21 @@
 	</aside>
 	<main>
 		<article >
-			<h2 id="Wprowadzenie">Jak wygląda struktura dokumentu HTML</h2>	
-			
-			<p>Struktura dokumentu HTML składa się z tzw. DTD ang. Document Type Declaration <em>(Deklarację Typu Dokumentu)</em>, Nagłówka dokumentu (treść nagłówkowa), Ciała dokumentu (treść właściwa). </p>
+			<h2 id="Wprowadzenie">Budowa i struktura dokumentu HTML</h2>	
+			<h3>Dokument HTML</h3>
+			<p><dfn><strong>Dokument html</strong></dfn> to zwykły plik tekstowy składający się z nazwy i rozszerzenia htm | html, który zawiera kod HTML. Dzięki HTML (Hipertext Markup Language, hipertekstowy język znaczników) przeglądarki internetowe potrafią przetworzyć (zinterpretować) zawartość pliku tekstowgeo i wyświetlić go w formie strony internetowej na ekranie.
+			<p><dfn><strong>Hipertekst</strong></dfn> to zbiór tekstów połączonych ze sobą odniesieniami, umożliwia swobodę w tworzenia treści i przekazu. Charakteryzuje się: <em>niesekwencyjnością, nieliniowością, elastycznością.</em></p>
+			<p>Cechą charakterystyczną hipertekstu jest niesekwencyjność, która pozwala odbiorcy na nieliniową lekturę i stworzenie oryginalnego odczytania dzieła. Dzięki zastosowaniu <strong>hiperłączy</strong> jako odnośników możliwe było opracowanie globalnego systemu tzw. sieci www (WorldWideWeb) umożliwiającej tworzenie rozbudowanych treści odwołujących się do rozmaitych źródeł rozprzestrzenionych na całym świecie.</p>
+			<h3>Struktura dokumentu HTML</h3>
+			<p>Strukturę dokumentu HTML tworzą  <em><code>&lt;!DOCTYPE html&gt;</code> (Deklarację Typu Dokumentu)</em>, Element główny tzw. korzeń <code>&lt;html&gt;</code>,Nagłówka dokumentu (treść nagłówkowa), BODY - Ciało dokumentu (treść właściwa).</p>
 				
 				<div id="html-structure">  <!-- div jest display:none (niewidoczny, nie wpływa na inne warstwy i formatowanie )-->
 					<h2>HTML</h2>
 					<h2>HEAD</h2>
 					<h2>BODY</h2><br>
 				</div><br>
-				
+			<figure id="schemat-struktury-html">
+				<figcaption>Schemat struktry dokumentu <HTML></HTML></figcaption>
 				<div id="html-structure2">
 					<code>&lt;!DOCTYPE=html&gt;</code>
 					<div id="struct-html-html">
@@ -147,8 +152,10 @@
 					</div>
 						<div><code>&lt;/html&gt;</code></div>
 					</div>
-				</div> 
-			<h3 id="DTD">Deklaracja typu dokumentu DTD | &lt;!DOCTYPE=html&gt;</h3>
+				</div>
+			</figure>	
+				
+			<h3 id="DTD">&lt;!DOCTYPE=html&gt; | Deklaracja typu dokumentu DTD</h3>
 			<p> Prolog zawiere informacje, w której wersji języka jest napisany dokument html.</p> 
 			<p> Paradoks - Henry Sivonen Aktywowanie trybów  przeglądarek za pomocą typu dokumentu</p>
 			<dl><dt>Tryb dziwactw</dt> <dd>W trybie dziwactw przeglądarki ignorują najnowsze standardy sieciowe, aby „poprawnie” wyświetlać strony, które zostały utworzone zgodnie z zasadami obowiązującymi w latach 90.</dd><dt>Tryb standardowy</dt><dd>W trybie standardowym przeglądarki w miarę swoich możliwości próbują przetwarzać dobrze zbudowane dokumenty zgodnie ze standardami. W HTML5 tryb ten nazywa się „trybem bez dziwactw”.</dd>
@@ -156,7 +163,7 @@
 			<a href="https://shebang.pl/html/html5-rzeczowo/r4-semantyka/" target="_blank" title="Rozdział 4. Co to wszystko znaczy, czyli semantyka HTML5">Źródło: !#Shebang, Mark Pilgrim, Łukasz Piwko, Artykuł o deklaracji typu dokumentu dla dokumentu html.</a><br>
 			<a href="http://diveintohtml5.info/index.html" target="_blank" title="DIVE INTO HTML5"> Mark Piligram, Dive Into Html5 </a><br>
 			<a href="Activating Browser Modes with Doctype">Źródło: Sivonen Henri, Activating Browser Modes with Doctype | hsivonen.fi</a>
-			<h2>Element główny tzw. korzeń (&lt;html&gt);</h2>
+			<h3>&lt;html&gt; | Element główny tzw. korzeń </h3>
 			
 			<h2>Część Nagłówkowa HEAD</h2>
 			<h3>Title</h3>
@@ -189,6 +196,7 @@
 			<!-- <img src="img/newsboy.png" alt="Chłopiec z gazetą" width="150" height="240" class="centered-img"> -->
 			<ul>
 				<li><a href="#Wprowadzenie">Początek</a></li>
+				<li><a href="#struktura-dokumentu-html">schemat struktury dokumentu HTML</a></li>
 				<li><a href="#DTD">Prolog | Deklaracja Typu Dokumentu</a></li>
 				<li><a href="#Podsumowanie">Podsumowanie</a></li>
 				<li><a href="#stopka">Stopka</a></li>
@@ -197,6 +205,7 @@
 		 <section>
 			<h2>Powązane tematy</h2>
 			<ul>
+				<li><a href="#">Budowa elementów HTML #UndrContr</a> </li>
 				<li><a href="#">Metadane</a></li>
 				<li><a href="#">html5: Znaczniki semantyczne</a></li>
 			</ul>
