@@ -7,7 +7,8 @@
 		<meta name="description" content="Projektowanie stron www | Budowa i struktura dokumentu HTML | informacje techniczne związane z WWW, HTML, JavaScript, CSS" >
 		<meta name="keywords" content="projektowanie, html, css, java script, metodologia, nauka">
 		
-        <link href="https://fonts.googleapis.com/css?family=Poppins|Mooli" rel="stylesheet"> <!-- https://developers.google.com/fonts/docs/getting_started?hl=pl -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins|Mooli" rel="stylesheet">
+		<!-- https://developers.google.com/fonts/docs/getting_started?hl=pl -->
         <link href="https://fonts.googleapis.com/css?family=Poppins|Tangerine|Inconsolata|Droid+Sans|Oswald" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Serif+Makasar|Grandiflora+One" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Amiko&subset=latin,latin-ext" rel="stylesheet">
@@ -20,7 +21,7 @@
         <link href="style3.css" rel="stylesheet">  -->
 		<style>
 			#html-structure {display:none; background-color:DarkGray; color: dimgrey; text-align:center; width:90%; margin: 0 auto 0 auto; }
-			#html-structure h2:first-of-type { color:WhiteSmoke; margin:5px 5px 115px 5px; padding: 3% 0 3% 0;}		
+			#html-structure h2:first-of-type { color:black; margin:5px 5px 115px 5px; padding: 3% 0 3% 0;}		
 			#html-structure h2:nth-of-type(2) { background-color:Gray; color: WhiteSmoke; margin: 0 5% 3% 5%; padding: 2% 0 4% 0;}		
 			#html-structure h2:last-of-type { background-color: DimGray; color: WhiteSmoke; margin: 0 5% 3% 5%; padding: 2% 0 18% 0;}	
 			
@@ -30,13 +31,12 @@
 			#html-structure2 div:last-of-type {margin-left:2%; margin-right:4%; }
 			#html-structure2 div {margin-left:4%; margin-right:4%; }
 			
-			#html-structure2 div h2 {background-color:darkgray; color:black; margin: 0 0 0 0; padding: 0 0 0 0; }
-			#html-structure2 div h2:first-child {background-color:lightgray; color:black; margin: 0 0 0 0; padding: 0 0 0 0; }
-			
+			#html-structure2 div h2{background-color:lightgray; color:black; margin: 0 0 0 0; padding: 0 0 0 0  }
+			#html-structure2 div div h2{background-color:darkgray; color:BLACK;  margin: 0 0 0 0; padding: 0 0 0 0; }
 			
 			#struct-html-html {background-color: lightgrey; color:black; margin:5px 5px 5px 5px; padding: 3% 0 3% 0;}
-			#struct-html-head {background-color: 	darkgrey; color:black; margin:5px 5px 5px 5px; padding: 3% 0 3% 0;}
-			#struct-html-body {background-color: 	darkgray; color:black; margin:5px 5px 5px 5px; padding: 3% 0 3% 0;}
+			#struct-html-head {background-color: darkgrey; color:black; margin:5px 5px 5px 5px; padding: 3% 0 3% 0;}
+			#struct-html-body {background-color: darkgray; color:black; margin:5px 5px 5px 5px; padding: 3% 0 3% 0;}
 		</style>
     </head>
 <body id="home">
@@ -119,12 +119,18 @@
 		<article >
 			<h2 id="Wprowadzenie">Budowa i struktura dokumentu HTML</h2>	
 			<h3>Dokument HTML</h3>
-			<p><dfn><strong>Dokument html</strong></dfn> to zwykły plik tekstowy składający się z nazwy pliku oraz rozszerzenia (htm, html), który zawiera kod HTML. <dfn><strong>HTML (Hipertext Markup Language, hipertekstowy język znaczników)</strong></dfn> to język znaczników służący do definiowania struktury i zawartości dokumentu html takich jak . Przeglądarki internetowe potrafią przetworzyć i zinterpretować (renderować) zawartość pliku tekstowgeo i wyświetlić go w formie strony internetowej na ekranie.
+			<p><dfn><strong>Dokument html</strong></dfn> to zwykły plik tekstowy składający się z <strong><samp>[nazwy pliku].[rozszerzenia]</samp></strong> <em>przykład <samp> index.htm, index.html</samp></em>, który zawiera kod HTML.</p>
+			<p><dfn><strong>HiperText Markup Language</strong></dfn> <em>hipertekstowy język znaczników</em> przeznaczony jest do tworzenia stron internetowych. Umożliwia definiowanie struktury i zawartości dokumentu w tym nagłówki, paragrafy, obrazy, linki itp. .<br>Przeglądarki internetowe renderują taki kod wyświtlając treść dokumentu html w sposób przystępny i zrozumiały dla odbiorcy.</p>
 			<p><dfn><strong>Hipertekst</strong></dfn> to zbiór tekstów połączonych ze sobą odniesieniami, umożliwia swobodę w tworzenia treści i przekazu. Charakteryzuje się: <em>niesekwencyjnością, nieliniowością, elastycznością.</em></p>
 			<p>Cechą charakterystyczną hipertekstu jest niesekwencyjność, która pozwala odbiorcy na nieliniową lekturę i stworzenie oryginalnego odczytania dzieła. Dzięki zastosowaniu <strong>hiperłączy</strong> jako odnośników możliwe było opracowanie globalnego systemu tzw. sieci www (WorldWideWeb) umożliwiającej tworzenie rozbudowanych treści odwołujących się do rozmaitych źródeł rozprzestrzenionych na całym świecie.</p>
 			<h3 id="struktura-dokumentu-html">Struktura dokumentu HTML</h3>
-			<p>Szkielet struktury dokumentu HTML tworzą <em>Deklaracja Typu Dokumentu <code>&lt;!DOCTYPE html&gt;</code></em>, Element główny tzw. korzeń <code>&lt;html&gt;</code>,Nagłówka dokumentu (treść nagłówkowa), BODY - Ciało dokumentu (treść właściwa).</p>
-				
+			<p>Szkielet struktury dokumentu HTML tworzą:</p>
+				<ol> 
+					<li><em>Deklaracja Typu Dokumentu <code>&lt;!DOCTYPE html&gt;</code></em>,</li>
+					<li>HTML | Element główny tzw. korzeń <code>&lt;html&gt;</code>,</li>
+					<LI>HEAD | Nagłówka dokumentu (treść nagłówkowa),</li>
+					<li>BODY | Ciało dokumentu (treść właściwa).</li>
+				</ol>
 				<div id="html-structure">  <!-- div jest display:none (niewidoczny, nie wpływa na inne warstwy i formatowanie )-->
 					<h2>HTML</h2>
 					<h2>HEAD</h2>
@@ -172,6 +178,7 @@
 			<h2>HTML | Element główny tzw. korzeń &lt;html&gt;</h2>
 			
 			<h2>HEAD | Część Nagłówkowa</h2>
+			Element języka HTML, który zawiera informacje o dokumencie html, takie jak tytuł strony, meta tagi, style CSS, jest to miejsce w którym określa się ważne informacje o stronie.
 			<h3>Title</h3>
 			<h3>Meta (Metadane)</h3>
 				<h4>Typy MIME</h4>
@@ -190,7 +197,9 @@
 			<h3>Skrypt | &lt;Script&gt; </h3>
 			<h3>Łącze | &lt;Link ..&gt;</h3>
 			<h2>BODY | ciało dokumentu </h2>
+			<H2>Budowa i rodzaje elementów HTML</H2>
 			<h2 id="Podsumowanie">Podsumowanie</h2>
+
 		</article>
 		<article title="To mój artykul">
 
