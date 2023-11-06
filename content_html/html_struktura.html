@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html> -->
 <html lang="pl" >
     <head>
         <meta charset="utf-8" name="Opis strony html" content="Strona opisuje elementy, które tworzą strukturę strony html"> <!--Komentarz 20230928-->
@@ -25,11 +25,11 @@
 			#html-structure h2:nth-of-type(2) { background-color:Gray; color: WhiteSmoke; margin: 0 5% 3% 5%; padding: 2% 0 4% 0;}		
 			#html-structure h2:last-of-type { background-color: DimGray; color: WhiteSmoke; margin: 0 5% 3% 5%; padding: 2% 0 18% 0;}	
 			
-			#html-structure2 {background-color:lightgray; color: black; text-align:left; width:90%; margin: 0 auto 0 auto;}
+			#html-structure2 {background-color:lightgray; color: black; text-align:left; width:90%; margin: 0 auto 0 auto; border-radius: 25px; padding-left: 15px; padding-top:15px;}
 			#html-structure2 code {font-size:1.2em; font-weight:semi; margin: 0 0 0 0 0;}
-			#html-structure2 div:first-of-type {margin-left:2%; margin-right:4%; margin-top: 0; margin-bottom: 0;}
+			#html-structure2 div:first-of-type {margin-left:2%; margin-right:4%; margin-top: 0; margin-bottom: 0;} 
 			#html-structure2 div:last-of-type {margin-left:2%; margin-right:4%; }
-			#html-structure2 div {margin-left:4%; margin-right:4%; }
+			#html-structure2 div {margin-left:4%; margin-right:4%;  border-radius: 20px;}
 			
 			#html-structure2 div h2{background-color:lightgray; color:black; margin: 0 0 0 0; padding: 0 0 0 0  }
 			#html-structure2 div div h2{background-color:darkgray; color:BLACK;  margin: 0 0 0 0; padding: 0 0 0 0; }
@@ -119,14 +119,14 @@
 		<article >
 			<h2 id="Wprowadzenie">Budowa i struktura dokumentu HTML</h2>	
 			<h3>Dokument HTML</h3>
-			<p><dfn><strong>Dokument html</strong></dfn> to zwykły plik tekstowy składający się z <strong><samp>[nazwy pliku].[rozszerzenia]</samp></strong> <em>przykład <samp> index.htm, index.html</samp></em>, który zawiera kod HTML.</p>
+			<p><dfn><strong>Dokument html</strong></dfn> to zwykły plik tekstowy składający się z <strong><samp>[nazwy pliku].[rozszerzenia]</samp></strong> <em>przykład <samp> index.htm, index.html</samp></em>, który poza treśćią zawiera dodatkowe elementy zapisane w kodzie <strong>HTML</strong>.</p>
 			<p><dfn><strong>HiperText Markup Language</strong></dfn> <em>hipertekstowy język znaczników</em> przeznaczony jest do tworzenia stron internetowych. Umożliwia definiowanie struktury i zawartości dokumentu w tym nagłówki, paragrafy, obrazy, linki itp. .<br>Przeglądarki internetowe renderują taki kod wyświtlając treść dokumentu html w sposób przystępny i zrozumiały dla odbiorcy.</p>
 			<p><dfn><strong>Hipertekst</strong></dfn> to zbiór tekstów połączonych ze sobą odniesieniami, umożliwia swobodę w tworzenia treści i przekazu. Charakteryzuje się: <em>niesekwencyjnością, nieliniowością, elastycznością.</em></p>
 			<p>Cechą charakterystyczną hipertekstu jest niesekwencyjność, która pozwala odbiorcy na nieliniową lekturę i stworzenie oryginalnego odczytania dzieła. Dzięki zastosowaniu <strong>hiperłączy</strong> jako odnośników możliwe było opracowanie globalnego systemu tzw. sieci www (WorldWideWeb) umożliwiającej tworzenie rozbudowanych treści odwołujących się do rozmaitych źródeł rozprzestrzenionych na całym świecie.</p>
 			<h3 id="struktura-dokumentu-html">Struktura dokumentu HTML</h3>
 			<p>Szkielet struktury dokumentu HTML tworzą:</p>
 				<ol> 
-					<li><em>Deklaracja Typu Dokumentu <code>&lt;!DOCTYPE html&gt;</code></em>,</li>
+					<li>&lt;!DOCTYPE&gt; | <em>Deklaracja Typu Dokumentu <code>&lt;!DOCTYPE html&gt;</code></em>,</li>
 					<li>HTML | Element główny tzw. korzeń <code>&lt;html&gt;</code>,</li>
 					<LI>HEAD | Nagłówka dokumentu (treść nagłówkowa),</li>
 					<li>BODY | Ciało dokumentu (treść właściwa).</li>
@@ -139,7 +139,7 @@
 			<figure id="schemat-struktury-html">
 				
 				<div id="html-structure2">
-					<code>&lt;!DOCTYPE=html&gt;</code>
+					<code>&lt;!DOCTYPE html&gt;</code>
 					<div id="struct-html-html">
 						<h2>HTML</h2> 						
 							<div><code>&lt;html&gt;</code></div>						
@@ -166,18 +166,46 @@
 				<figcaption>Schemat struktry dokumentu <HTML></HTML></figcaption>
 			</figure>	
 				
-			<h3 id="DTD">&lt;!DOCTYPE=html&gt; | Deklaracja typu dokumentu DTD</h3>
-			<p> Prolog zawiere informacje, w której wersji języka jest napisany dokument html.</p> 
-			<p> Paradoks - Henry Sivonen Aktywowanie trybów  przeglądarek za pomocą typu dokumentu</p>
+			<h3 id="DTD">DTD | Deklaracja typu dokumentu <CODE>&lt;!DOCTYPE&gt;</CODE></h3>
+			<p><strong><em>Prolog</em></strong> czyli <strong><em>Deklaracja Typu Dokumentu</em></strong> umieszczona zazwyczaj na początku dokumentu html składa się ze specjalnego bloku: <code>&lt;!DOCTYPE&gt;</code>. Określa w jakim standardzie został przygotowany dokument html dzięki czemu  przeglądarka wie w jakim (?trybie) powinna zostać przetwarzać/renderować/interpretować strona.</p>
+			<p>Jeżeli dokument jest zgodny z wersją 4.01 możemy wykorzystać następujące deklaracje typu dokumentu:</p>
+
+			<p><strong><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</code></strong></p>
+			<p><strong><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</code></strong></p>
+			<p><strong><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"&gt;</code></strong></p>
+
+			<p>Obecnie najnowszy standard HTML5 zaleca stosowanie uproszczonej wersji deklaracji DTD</p>
+			<p><strong><code>&lt;!DOCTYPE html&gt;</code></strong></p><br>
+			
+			<a href="https://www.w3.org/QA/2002/04/valid-dtd-list.html" target="_blank">lista zalecanych deklaracji typu dokumentu DTD</a>
+			<div style="display: none;">
+			<p>
+				<code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+				</code><br>
+			
+			</p>
+			
+				<ul>
+					<li><dfn>Definicja elementów</dfn> - definiuje jakie znaczniki są dozwolone w dokumencie, jakie mogą mieć atrybuty, a także jakie elementy mogą być zagnieżdżane w innych elementach.</li>
+					<li><dfn>Atrybuty</dfn> - określa jakie atrybuty są dozwolone w poszczególnych znacznikch oraz jakie wartości mogą przyjmować.</li>
+					<li><dfn>Encje</dfn> - DTD może również definiować encje, które są specjalnymi zastąpieniami tekstowymi np. </li>
+				</ul> 
+				<p>rozwiązanie zapoczątkowane przez twórców Microsoft IE w wersji 5.</p>
+			<a>Należy zauważyć, że DTD nie jest już tak powszechnie używane w nowoczesnych dokumentach HTML czy XML, a w przypadku HTML5 deklaracja ta jest opcjonalna. Walidacja opiera się na modelu DOM (Document Object Model).</a>
 			<dl><dt>Tryb dziwactw</dt> <dd>W trybie dziwactw przeglądarki ignorują najnowsze standardy sieciowe, aby „poprawnie” wyświetlać strony, które zostały utworzone zgodnie z zasadami obowiązującymi w latach 90.</dd><dt>Tryb standardowy</dt><dd>W trybie standardowym przeglądarki w miarę swoich możliwości próbują przetwarzać dobrze zbudowane dokumenty zgodnie ze standardami. W HTML5 tryb ten nazywa się „trybem bez dziwactw”.</dd>
 			<dt>Tryb prawie standardowy</dt><dd>Firefox, Safari, Chrome, Opera (od 7.5) i IE 8 mają dodatkowo tryb zwany „trybem prawie standardowym”, w którym algorytmy określania wysokości komórek tabeli są zaimplementowane w tradycyjny sposób, niezgodny ze specyfikacją CSS 2. W HTML5 tryb ten nazywa się „trybem umiarkowanych dziwactw”.</dd></dl>
+			</div>
 			<a href="https://shebang.pl/html/html5-rzeczowo/r4-semantyka/" target="_blank" title="Rozdział 4. Co to wszystko znaczy, czyli semantyka HTML5">Źródło: !#Shebang, Mark Pilgrim, Łukasz Piwko, Artykuł o deklaracji typu dokumentu dla dokumentu html.</a><br>
 			<a href="http://diveintohtml5.info/index.html" target="_blank" title="DIVE INTO HTML5"> Mark Piligram, Dive Into Html5 </a><br>
 			<a href="Activating Browser Modes with Doctype">Źródło: Sivonen Henri, Activating Browser Modes with Doctype | hsivonen.fi</a>
 			
-			<h2>HTML | Element główny tzw. korzeń &lt;html&gt;</h2>
-			
-			<h2>HEAD | Część Nagłówkowa</h2>
+			<h2 id="element-html">HTML | Element główny tzw. korzeń &lt;html&gt;</h2>
+			<p>Element <code>&lt;html&gt ... &lt;/html&gt;</code> definiuje początek i koniec dokumentu HTML.</p>
+			<div>
+				<p><code>&lt;html xmls="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"&gt;</code></p>
+				<p><em>atrybut xmls</em></p>
+				
+			<h2 id="element-head">HEAD | Część Nagłówkowa</h2>
 			Element języka HTML, który zawiera informacje o dokumencie html, takie jak tytuł strony, meta tagi, style CSS, jest to miejsce w którym określa się ważne informacje o stronie.
 			<h3>Title</h3>
 			<h3>Meta (Metadane)</h3>
@@ -196,7 +224,7 @@
 				
 			<h3>Skrypt | &lt;Script&gt; </h3>
 			<h3>Łącze | &lt;Link ..&gt;</h3>
-			<h2>BODY | ciało dokumentu </h2>
+			<h2 id="element-body">BODY | Ciało dokumentu </h2>
 			<H2>Budowa i rodzaje elementów HTML</H2>
 			<h2 id="Podsumowanie">Podsumowanie</h2>
 
@@ -213,6 +241,9 @@
 				<li><a href="#Wprowadzenie">Początek</a></li>
 				<li><a href="#struktura-dokumentu-html">schemat struktury dokumentu HTML</a></li>
 				<li><a href="#DTD">Prolog | Deklaracja Typu Dokumentu</a></li>
+				<li><a href="#element-html">Elemnt główny HTML</a></li>
+				<li><a href="#element-head">Część nagłówkowa HEAD</a></li>
+				<li><a href="#element-body">Ciało dokumentu BODY</a></li>
 				<li><a href="#Podsumowanie">Podsumowanie</a></li>
 				<li><a href="#stopka">Stopka</a></li>
 			</ul>
@@ -228,6 +259,7 @@
 		 <section>
 			<h2>Zobacz również</h2>
 			<ul>
+				
 				<li><a href="https://how2html.pl/html-head-body/" target="_blank" Title="How2Html - o strukturze dokumentu HTML">how2html | html-head-body </a></li>
 					<li><a href="https://shebang.pl/html/struktura-dokumentu-html/" target="_blank" >shebang.pl | html-head-body</a></li>
 				<li><a href="https://ifj.edu.pl/private/krawczyk/kurshtml/struktur/struktur.htm" target="_blank"  >ifj.edu.pl | Struktura dokumentu HTML</a></li>
@@ -240,6 +272,7 @@
 		<section>
 		<h2>Odnośniki</h2>
 			<ul>
+				<li><a href="https://www.w3.org/QA/2002/04/valid-dtd-list.html" target="_blank">lista zalecanych deklaracji typu dokumentu DTD</a></li>
 				<li><a href="http://typografia.info/">typografia.info</a></li>
 				<li><a href="http://www.taat.pl/typografia">Typografia internetowa</a></li>
 				<li><a href="https://www.kentype.pl/?menu=31&group=guide">KENTYPE - Poradnik</a></li>
